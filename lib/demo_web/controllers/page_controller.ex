@@ -15,8 +15,18 @@ defmodule DemoWeb.PageController do
     |> String.split()
     |> Enum.count()
     |> IO.inspect()
-    |> dbg
-
     conn
+  end
+
+  def pry do
+    a = 10
+
+    require IEx
+    IEx.pry
+
+    b = 5
+    c = a + b
+
+    {:ok, c}
   end
 end
