@@ -15,6 +15,8 @@ defmodule DemoWeb.PageController do
     |> String.split()
     |> Enum.count()
     |> IO.inspect()
+    |> dbg
+
     conn
   end
 
